@@ -1,40 +1,46 @@
 {
-  "name": "sails-nedb",
-  "version": "0.0.0",
-  "description": "neDB adapter for Sails / Waterline",
-  "license": "MIT",
-  "main": "./lib/adapter.js",
-  "scripts": {
-    "test": "node test/integration/runner -R spec -b",
-    "lint": "jshint lib/*.js"
-  },
-  "repository": "kokujin/sails-nedb",
-  "keywords": [
+    "name": "sails-nedb",
+    "version": "0.0.0",
+    "description": "neDB adapter for Sails / Waterline",
+    "license": "MIT",
+    "main": "./lib/adapter.js",
+    "scripts": {
+        "test": "node test/integration/runner -R spec -b",
+        "lint": "jshint lib/*.js"
+    },
+    "repository": "kokujin/sails-nedb",
+    "keywords": [
     "neDB",
+    "mongoDB",
+    "orm",
     "adapter",
     "sails",
     "waterline",
     "sails.js",
     "plugin"
   ],
-  "author": {
-    "name": "kokujin",
-    "email": ""
-  },
-  "engines": {
-    "node": ">=0.10.0"
-  },
-  "jshintConfig": {
-    "bitwise": true,
-    "curly": false,
-    "eqeqeq": false,
-    "latedef": true,
-    "shadow": "inner",
-    "undef": true,
-    "unused": "vars",
-    "node": true,
-    "sub": true
-},
-  "dependencies": {},
-  "devDependencies": {}
+    "author": {
+        "name": "kokujin",
+        "email": ""
+    },
+    "engines": {
+        "node": ">=0.10.0"
+    },
+    "jshintConfig": {
+        "bitwise": true,
+        "curly": false,
+        "eqeqeq": false,
+        "latedef": true,
+        "shadow": "inner",
+        "undef": true,
+        "unused": "vars",
+        "node": true,
+        "sub": true
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "captains-log": "^0.11.11",
+        "mocha": "^2.3.4",
+        "waterline-adapter-tests": "^0.10.16"
+    }
 }
